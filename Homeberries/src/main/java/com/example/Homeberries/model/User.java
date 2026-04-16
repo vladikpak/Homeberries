@@ -37,7 +37,7 @@ public class User {
 
     @OneToMany(mappedBy = "user")
     @ToString.Exclude
-    private List<Order> orders;  // Заказы пользователя (User - 1, Order - 1 или МНОГО заказов). У одного пользователя много пользователя
+    private List<Order> orders;  // Заказы пользователя (User - 1, Order - 1 или МНОГО заказов). У одного пользователя много заказов
 
 //    @CreationTimestamp
     @Column(name = "created_at")
