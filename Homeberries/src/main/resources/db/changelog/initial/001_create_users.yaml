@@ -1,0 +1,42 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001-create-users-table
+      author: student
+      changes:
+        - createTable:
+            tableName: users
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints: { primaryKey: true }
+              - column:
+                   name: email
+                   type: VARCHAR(100)
+                   constraints: { nullable: false, unique: true }
+              - column:
+                  name: password
+                  type: VARCHAR(255)
+                  constraints: { nullable: false }
+              - column:
+                  name: name
+                  type: VARCHAR(100)
+              - column:
+                  name: phone
+                  type: VARCHAR(20)
+              - column:
+                  name: role
+                  type: VARCHAR(50)
+                  defaultValue: "ROLE_USER"
+              - column:
+                  name: balance
+                  type: int
+              - column:
+                  name: preferred_language
+                  type: VARCHAR(20)
+                  defaultValue: "ru"
+              - column:
+                  name: created_at
+                  type: TIMESTAMP
+                  defaultValueComputed: CURRENT_TIMESTAMP

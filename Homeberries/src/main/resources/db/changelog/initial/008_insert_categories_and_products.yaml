@@ -1,0 +1,128 @@
+ databaseChangeLog:
+    - changeSet:
+        id: 008-insert-categories-and-products
+        author: student
+        changes:
+          #  КАТЕГОРИИ
+          - insert:
+              tableName: categories
+              columns:
+                - column: { name: id, value: 1 }
+                - column: { name: name, value: "Обувь" }
+          - insert:
+              tableName: categories
+              columns:
+                - column: { name: id, value: 2 }
+                - column: { name: name, value: "Детям" }
+          - insert:
+              tableName: categories
+              columns:
+                - column: { name: id, value: 3 }
+                - column: { name: name, value: "Мужчинам" }
+          - insert:
+              tableName: categories
+              columns:
+                - column: { name: id, value: 4 }
+                - column: { name: name, value: "Электроника" }
+          - insert:
+              tableName: categories
+              columns:
+                - column: { name: id, value: 5 }
+                - column: { name: name, value: "Дом" }
+          - insert:
+              tableName: categories
+              columns:
+                - column: { name: id, value: 6 }
+                - column: { name: name, value: "Спорт" }
+
+          # ТОВАРЫ
+          # Категория 1 - Обувь
+          - insert:
+              tableName: products
+              columns:
+                - column: { name: name, value: "Кроссовки Nike" }
+                - column: { name: price, value: 8000 }
+                - column: { name: category_id, value: 1 }
+                - column: { name: image_url, value: "/uploads/products/nike.jpg" }
+          - insert:
+              tableName: products
+              columns:
+                - column: { name: name, value: "Ботинки Timberland" }
+                - column: { name: price, value: 15000 }
+                - column: { name: category_id, value: 1 }
+                - column: { name: image_url, value: "/uploads/products/boot.jpeg" }
+
+          # Категория 2 - Детям
+          - insert:
+              tableName: products
+              columns:
+                - column: { name: name, value: "Детский конструктор" }
+                - column: { name: price, value: 2500 }
+                - column: { name: category_id, value: 2 }
+                - column: { name: image_url, value: "/uploads/products/lego.jpg" }
+
+          # Категория 3 - Мужчинам
+          - insert:
+              tableName: products
+              columns:
+                - column: { name: name, value: "Мужская рубашка" }
+                - column: { name: price, value: 3000 }
+                - column: { name: category_id, value: 3 }
+                - column: { name: image_url, value: "/uploads/products/shirt.jpg" }
+
+          # Категория 4 - Электроника
+          - insert:
+              tableName: products
+              columns:
+                - column: { name: name, value: "Смартфон Xiaomi" }
+                - column: { name: price, value: 25000 }
+                - column: { name: category_id, value: 4 }
+                - column: { name: image_url, value: "/uploads/products/phone.jpg" }
+          - insert:
+              tableName: products
+              columns:
+                - column: { name: name, value: "Ноутбук Lenovo" }
+                - column: { name: price, value: 45000 }
+                - column: { name: category_id, value: 4 }
+                - column: { name: image_url, value: "/uploads/products/laptop.webp" }
+
+          # Категория 5 - Дом
+          - insert:
+              tableName: products
+              columns:
+                - column: { name: name, value: "Набор посуды" }
+                - column: { name: price, value: 3500 }
+                - column: { name: category_id, value: 5 }
+                - column: { name: image_url, value: "/uploads/products/appliances.jpg" }
+          - insert:
+              tableName: products
+              columns:
+                - column: { name: name, value: "Сковорода" }
+                - column: { name: price, value: 1200 }
+                - column: { name: category_id, value: 5 }
+                - column: { name: image_url, value: "/uploads/products/frypan.jpg" }
+
+          # Категория 6 - Спорт
+          - insert:
+              tableName: products
+              columns:
+                - column: { name: name, value: "Футбольный мяч" }
+                - column: { name: price, value: 2000 }
+                - column: { name: category_id, value: 6 }
+                - column: { name: image_url, value: "/uploads/products/ball.jpg" }
+          - insert:
+              tableName: products
+              columns:
+                - column: { name: name, value: "Гантели 5кг" }
+                - column: { name: price, value: 3000 }
+                - column: { name: category_id, value: 6 }
+                - column: { name: image_url, value: "/uploads/products/gantle.jpg" }
+
+          - insert:
+              tableName: users
+              columns:
+                - column: { name: email, value: "admin@shop.com" }
+                - column: { name: password, value: "$2a$10$Tglu2idhpSON5py8Z3XS2.vs.B.tAglZtLInB5LY2EjugHxwElE5K" }
+                - column: { name: name, value: "Admin" }
+                - column: { name: role, value: "ROLE_ADMIN" }
+                - column: { name: created_at, valueComputed: "CURRENT_TIMESTAMP"}

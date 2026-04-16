@@ -1,2 +1,47 @@
 databaseChangeLog:
-  - 
+  - changeSet:
+      id: 003-create-products-table
+      author: student
+      changes:
+        - createTable:
+            tableName: products
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: name
+                  type: VARCHAR(200)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: description
+                  type: VARCHAR(2000)
+              - column:
+                  name: price
+                  type: INT
+                  constraints:
+                   nullable: false
+              - column:
+                  name: stock
+                  type: INT
+                  defaultValue: 0
+              - column:
+                  name: image_url
+                  type: VARCHAR(500)
+              - column:
+                  name: category_id
+                  type: BIGINT
+              - column:
+                  name: created_at
+                  type: TIMESTAMP
+                  defaultValueComputed: CURRENT_TIMESTAMP
+        - addForeignKeyConstraint:
+            constraintName: fk_product_category
+            baseTableName: products
+            baseColumnNames: category_id
+            referencedTableName: categories
+            referencedColumnNames: id

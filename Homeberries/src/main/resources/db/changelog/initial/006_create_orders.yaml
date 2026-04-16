@@ -1,2 +1,35 @@
 databaseChangeLog:
-  - 
+  - changeSet:
+      id: 006-create-orders-table
+      author: student
+      changes:
+        - createTable:
+            tableName: orders
+            columns:
+              - column:
+                   name: id
+                   type: BIGINT
+                   autoIncrement: true
+                   constraints: { primaryKey: true }
+              - column:
+                   name: user_id
+                   type: BIGINT
+                   constraints: { nullable: false }
+              - column:
+                   name: total_amount
+                   type: INT
+                   constraints: { nullable: false }
+              - column:
+                   name: status
+                   type: VARCHAR(50)
+                   defaultValue: "NEW"
+              - column:
+                   name: created_at
+                   type: TIMESTAMP
+                   defaultValueComputed: CURRENT_TIMESTAMP
+        - addForeignKeyConstraint:
+            constraintName: fk_order_user
+            baseTableName: orders
+            baseColumnNames: user_id
+            referencedTableName: users
+            referencedColumnNames: id
