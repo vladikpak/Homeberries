@@ -1,44 +1,66 @@
 <#import "../layout/main.ftlh" as main>
-<@main.layout "Корзина">
-    <h2>Корзина</h2>
+<#import "../spring.ftl" as spring>
+<@main.layout "Cart">
+
+    <h2><@spring.message "cart.title"/></h2>
+
     <#if cart.items?size == 0>
-        <p>Корзина пуста</p>
-        <a href="/products" class="btn btn-primary">Перейти к покупкам</a>
+        <div class="alert alert-info">
+            <p><@spring.message "cart.empty"/></p>
+            <a href="/products" class="btn btn-primary"><@spring.message "order.continue"/></a>
+        </div>
     <#else>
-        <table class="table">
-            <thead>
-            <tr>
-                <th>Товар</th>
-                <th>Цена</th>
-                <th>Количество</th>
-                <th>Сумма</th>
-                <th>Действия</th>
-            </thead>
-            <tbody>
-            <#list cart.items as item>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
                 <tr>
-                    <td>${item.product.name}</td>
-                    <td>${item.product.price} ₽</td>
-                    <td>
-                        <form action="/cart/update/${item.product.id}" method="post" style="display:inline;">
-                            <input type="number" name="quantity" value="${item.quantity}" min="1" style="width:60px;">
-                            <button type="submit" class="btn btn-sm btn-primary">Обновить</button>
-                        </form>
-                    </td>
-                    <td>${item.product.price * item.quantity} ₽</td>
-                    <td>
-                        <form action="/cart/remove/${item.product.id}" method="post" style="display:inline;">
-                            <button type="submit" class="btn btn-sm btn-danger">Удалить</button>
-                        </form>
-                    </td>
+                    <th><@spring.message "filters.name"/></th>
+                    <th><@spring.message "product.price"/></th>
+                    <th><@spring.message "product.quantity"/></th>
+                    <th><@spring.message "cart.total"/></th>
+                    <th></th>
                 </tr>
-            </#list>
-            </tbody>
-        </table>
-        <h4>Итого: ${totalAmount} ₽</h4>
-        <form action="/cart/clear" method="post" style="display:inline;">
-            <button type="submit" class="btn btn-warning">Очистить корзину</button>
-        </form>
-        <a href="/orders/checkout" class="btn btn-success">Оформить заказ</a>
+                </thead>
+                <tbody>
+                <#list cart.items as item>
+                    <tr>
+                        <td>${item.productName}</td>
+                        <td>${item.productPrice} ₽</td>
+                        <td>
+                            <form action="/cart/update/${item.productId}" method="post" style="display:inline;">
+                                <@main.csrf />
+                                <input type="number" name="quantity" value="${item.quantity}" min="1" style="width:70px;">
+                                <button type="submit" class="btn btn-sm btn-primary"><@spring.message "cart.update"/></button>
+                            </form>
+                        </td>
+                        <td>${item.productPrice * item.quantity} ₽</td>
+                        <td>
+                            <form action="/cart/remove/${item.productId}" method="post" style="display:inline;">
+                                <@main.csrf />
+                                <button type="submit" class="btn btn-sm btn-danger"><@spring.message "cart.remove"/></button>
+                            </form>
+                        </td>
+                    </tr>
+                </#list>
+                </tbody>
+                <tfoot>
+                <tr class="table-dark">
+                    <td colspan="3" class="text-end"><strong><@spring.message "cart.total"/>:</strong></td>
+                    <td><strong>${totalAmount} ₽</strong></td>
+                    <td></td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <div class="mt-3">
+            <form action="/cart/clear" method="post" style="display:inline;">
+                <@main.csrf />
+                <button type="submit" class="btn btn-warning"><@spring.message "cart.clear"/></button>
+            </form>
+            <a href="/orders/checkout" class="btn btn-success"><@spring.message "cart.checkout"/></a>
+        </div>
     </#if>
+
 </@main.layout>
+

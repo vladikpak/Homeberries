@@ -20,7 +20,7 @@
                         <@main.csrf />
 
                         <div class="mb-3">
-                            <label class="form-label">Название товара *</label>
+                            <label class="form-label">Название товара </label>
                             <input type="text" name="name" class="form-control" required>
                         </div>
 
@@ -31,7 +31,7 @@
 
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <label class="form-label">Цена (₽) *</label>
+                                <label class="form-label">Цена </label>
                                 <input type="number" name="price" class="form-control" required min="0" step="1">
                             </div>
                             <div class="col-md-6 mb-3">
@@ -43,7 +43,7 @@
                         <div class="mb-3">
                             <label class="form-label">Категория</label>
                             <select name="categoryId" class="form-control">
-                                <option value="">-- Без категории --</option>
+                                <option value=""> Без категории </option>
                                 <#list categories as cat>
                                     <option value="${cat.id}">${cat.name}</option>
                                 </#list>
@@ -51,7 +51,7 @@
                         </div>
 
                         <div class="mb-3">
-                            <label class="form-label">Изображение товара *</label>
+                            <label class="form-label">Изображение товара </label>
                             <input type="file" name="imageFile" class="form-control" accept="image/*" required>
                             <small class="text-muted">Поддерживаются форматы: JPG, PNG, GIF, WEBP</small>
                         </div>
