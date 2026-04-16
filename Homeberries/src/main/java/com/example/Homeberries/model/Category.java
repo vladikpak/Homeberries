@@ -1,5 +1,8 @@
 package com.example.Homeberries.model;
 
+import jakarta.persistence.*;
+import lombok.*;
+
 import java.util.List;
 
 @Entity
@@ -13,10 +16,14 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;           // "Электроника"
-    private String description;    // "Телефоны, ноутбуки"
-    private String icon;           // "fas fa-mobile-alt"
+    @Column(name = "name", nullable = false, unique = true)
+    private String name;
+    @Column(name = "description")
+    private String description;
+    @Column(name = "icon")
+    private String icon;
 
     @OneToMany(mappedBy = "category")
-    private List<Product> products;  // Товары в категории
+    @ToString.Exclude
+    private List<Product> products;  // Товары в категории  (Category - 1 шт. (Обувь) - содержит -  Product - МНОГО заказов из обуви)
 }

@@ -1,5 +1,10 @@
 package com.example.Homeberries.model;
 
+import jakarta.persistence.*;
+import lombok.*;
+
+import java.time.LocalDateTime;
+
 @Entity
 @Table(name = "products")
 @Data
@@ -10,14 +15,22 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String name;           // Название
-    private String description;    // Описание
-    private Integer price;      // Цена
-    private Integer stock;         // Количество на складе
+    @Column(name = "name", nullable = false)
+    private String name;
+    @Column(name = "description")
+    private String description;
+    @Column(name = "price", nullable = false)
+    private Integer price;
+    @Column(name = "stock")
+    private Integer stock;
+    @Column(name = "imageUrl")
     private String imageUrl;
-    // Картинка
+
     @ManyToOne
     @JoinColumn(name = "category_id")
-    private Category category;     // Категория
+    @ToString.Exclude
+    private Category category;     // Категория (Product - МНОГО, Category - 1 шт. (пример: Обувь)). Много товаров (ОБУВИ) в одной Категории (Обувь).
+
+    @Column(name = "created_at")
     private LocalDateTime createdAt;
 }
