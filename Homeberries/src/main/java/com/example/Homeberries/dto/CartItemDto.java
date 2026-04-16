@@ -1,13 +1,19 @@
 package com.example.Homeberries.dto;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 public class CartItemDto {
+    private Long id;
     private Long productId;
     private String productName;
-    private BigDecimal productPrice;
+    private Integer productPrice;
     private Integer quantity;
-    private BigDecimal subtotal;  // цена × количество
+    private Integer subtotal;
 }
