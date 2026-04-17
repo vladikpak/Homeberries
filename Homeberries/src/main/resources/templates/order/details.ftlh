@@ -1,12 +1,12 @@
 <#import "../layout/main.ftlh" as main>
 <#import "../spring.ftl" as spring>
-<@main.layout "Заказ №${order.id}">
+<@main.layout "Заказ">
 
     <div class="row">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">
-                    <h4><@spring.message "order.detail.title"/> ${order.id}</h4>
+                    <h4><@spring.message "order.detail.title"/>{ ${order.id} }</h4>
                 </div>
                 <div class="card-body">
                     <div class="row mb-4">
@@ -42,16 +42,16 @@
                             <#list order.items as item>
                                 <tr>
                                     <td>${item.productName}</td>
-                                    <td>${item.price} ₽</td>
+                                    <td>${item.price} сом</td>
                                     <td>${item.quantity}</td>
-                                    <td>${item.price * item.quantity} ₽</td>
+                                    <td>${item.price * item.quantity} сом</td>
                                 </tr>
                             </#list>
                             </tbody>
                             <tfoot>
                             <tr class="table-dark">
                                 <td colspan="3" class="text-end"><strong><@spring.message "cart.total"/>:</strong></td>
-                                <td><strong>${order.totalAmount} ₽</strong></td>
+                                <td><strong>${order.totalAmount} сом</strong></td>
                             </tr>
                             </tfoot>
                         </table>

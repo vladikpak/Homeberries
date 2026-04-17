@@ -24,16 +24,16 @@
                             <#list cart.items as item>
                                 <tr>
                                     <td>${item.productName}</td>
-                                    <td>${item.productPrice} ₽</td>
+                                    <td>${item.productPrice} сом</td>
                                     <td>${item.quantity}</td>
-                                    <td>${item.productPrice * item.quantity} ₽</td>
+                                    <td>${item.productPrice * item.quantity} сом</td>
                                 </tr>
                             </#list>
                             </tbody>
                             <tfoot>
                             <tr class="table-dark">
                                 <td colspan="3" class="text-end"><strong><@spring.message "cart.total"/>:</strong></td>
-                                <td><strong>${totalAmount} ₽</strong></td>
+                                <td><strong>${totalAmount} сом</strong></td>
                             </tr>
                             </tfoot>
                         </table>
