@@ -25,7 +25,7 @@
                 <#list cart.items as item>
                     <tr>
                         <td>${item.productName}</td>
-                        <td>${item.productPrice} ₽</td>
+                        <td>${item.productPrice} сом</td>
                         <td>
                             <form action="/cart/update/${item.productId}" method="post" style="display:inline;">
                                 <@main.csrf />
@@ -33,7 +33,7 @@
                                 <button type="submit" class="btn btn-sm btn-primary"><@spring.message "cart.update"/></button>
                             </form>
                         </td>
-                        <td>${item.productPrice * item.quantity} ₽</td>
+                        <td>${item.productPrice * item.quantity} сом</td>
                         <td>
                             <form action="/cart/remove/${item.productId}" method="post" style="display:inline;">
                                 <@main.csrf />
@@ -46,7 +46,7 @@
                 <tfoot>
                 <tr class="table-dark">
                     <td colspan="3" class="text-end"><strong><@spring.message "cart.total"/>:</strong></td>
-                    <td><strong>${totalAmount} ₽</strong></td>
+                    <td><strong>${totalAmount} сом</strong></td>
                     <td></td>
                 </tr>
                 </tfoot>
