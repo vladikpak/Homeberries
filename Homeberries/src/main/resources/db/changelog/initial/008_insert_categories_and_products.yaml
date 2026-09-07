@@ -43,14 +43,14 @@
                 - column: { name: name, value: "Кроссовки Nike" }
                 - column: { name: price, value: 8000 }
                 - column: { name: category_id, value: 1 }
-                - column: { name: image_url, value: "/uploads/products/nike.jpg" }
+                - column: { name: image_url, value: "/static/uploads/products/nike.jpg" }
           - insert:
               tableName: products
               columns:
                 - column: { name: name, value: "Ботинки Timberland" }
                 - column: { name: price, value: 15000 }
                 - column: { name: category_id, value: 1 }
-                - column: { name: image_url, value: "/uploads/products/boot.jpeg" }
+                - column: { name: image_url, value: "/static/uploads/products/boot.jpeg" }
 
           # Категория 2 - Детям
           - insert:
@@ -59,7 +59,7 @@
                 - column: { name: name, value: "Детский конструктор" }
                 - column: { name: price, value: 2500 }
                 - column: { name: category_id, value: 2 }
-                - column: { name: image_url, value: "/uploads/products/lego.jpg" }
+                - column: { name: image_url, value: "/static/uploads/products/lego.jpg" }
 
           # Категория 3 - Мужчинам
           - insert:
@@ -68,7 +68,7 @@
                 - column: { name: name, value: "Мужская рубашка" }
                 - column: { name: price, value: 3000 }
                 - column: { name: category_id, value: 3 }
-                - column: { name: image_url, value: "/uploads/products/shirt.jpg" }
+                - column: { name: image_url, value: "/static/uploads/products/shirt.jpg" }
 
           # Категория 4 - Электроника
           - insert:
@@ -77,14 +77,14 @@
                 - column: { name: name, value: "Смартфон Xiaomi" }
                 - column: { name: price, value: 25000 }
                 - column: { name: category_id, value: 4 }
-                - column: { name: image_url, value: "/uploads/products/phone.jpg" }
+                - column: { name: image_url, value: "/static/uploads/products/phone.jpg" }
           - insert:
               tableName: products
               columns:
                 - column: { name: name, value: "Ноутбук Lenovo" }
                 - column: { name: price, value: 45000 }
                 - column: { name: category_id, value: 4 }
-                - column: { name: image_url, value: "/uploads/products/laptop.webp" }
+                - column: { name: image_url, value: "/static/uploads/products/laptop.webp" }
 
           # Категория 5 - Дом
           - insert:
@@ -93,14 +93,14 @@
                 - column: { name: name, value: "Набор посуды" }
                 - column: { name: price, value: 3500 }
                 - column: { name: category_id, value: 5 }
-                - column: { name: image_url, value: "/uploads/products/appliances.jpg" }
+                - column: { name: image_url, value: "/static/uploads/products/appliances.jpg" }
           - insert:
               tableName: products
               columns:
                 - column: { name: name, value: "Сковорода" }
                 - column: { name: price, value: 1200 }
                 - column: { name: category_id, value: 5 }
-                - column: { name: image_url, value: "/uploads/products/frypan.jpg" }
+                - column: { name: image_url, value: "/static/uploads/products/frypan.jpg" }
 
           # Категория 6 - Спорт
           - insert:
@@ -109,14 +109,14 @@
                 - column: { name: name, value: "Футбольный мяч" }
                 - column: { name: price, value: 2000 }
                 - column: { name: category_id, value: 6 }
-                - column: { name: image_url, value: "/uploads/products/ball.jpg" }
+                - column: { name: image_url, value: "/static/uploads/products/ball.jpg" }
           - insert:
               tableName: products
               columns:
                 - column: { name: name, value: "Гантели 5кг" }
                 - column: { name: price, value: 3000 }
                 - column: { name: category_id, value: 6 }
-                - column: { name: image_url, value: "/uploads/products/gantle.jpg" }
+                - column: { name: image_url, value: "/static/uploads/products/gantle.jpg" }
 
           - insert:
               tableName: users
