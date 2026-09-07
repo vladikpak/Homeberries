@@ -1,0 +1,108 @@
+2026-09-07T10:31:44.279+06:00  INFO 1860 --- [Homeberries] [main] c.e.Homeberries.HomeberriesApplication   : Starting HomeberriesApplication using Java 26.0.2.1 with PID 1860 (C:\Users\User\Desktop\Project\Homeberries\Homeberries\target\classes started by User in C:\Users\User\Desktop\Project\Homeberries\Homeberries)
+2026-09-07T10:31:44.282+06:00 DEBUG 1860 --- [Homeberries] [main] c.e.Homeberries.HomeberriesApplication   : Running with Spring Boot v4.1.0-M3, Spring v7.0.6
+2026-09-07T10:31:44.283+06:00  INFO 1860 --- [Homeberries] [main] c.e.Homeberries.HomeberriesApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-09-07T10:31:45.457+06:00  INFO 1860 --- [Homeberries] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-07T10:31:45.527+06:00  INFO 1860 --- [Homeberries] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 60 ms. Found 7 JPA repository interfaces.
+2026-09-07T10:31:46.019+06:00  INFO 1860 --- [Homeberries] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8089 (http)
+2026-09-07T10:31:46.035+06:00  INFO 1860 --- [Homeberries] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-07T10:31:46.036+06:00  INFO 1860 --- [Homeberries] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-09-07T10:31:46.136+06:00  INFO 1860 --- [Homeberries] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1799 ms
+2026-09-07T10:31:46.199+06:00 DEBUG 1860 --- [Homeberries] [main] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2026-09-07T10:31:46.290+06:00  INFO 1860 --- [Homeberries] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-07T10:31:46.560+06:00  INFO 1860 --- [Homeberries] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2026-09-07T10:31:46.562+06:00  INFO 1860 --- [Homeberries] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-07T10:31:46.612+06:00  INFO 1860 --- [Homeberries] [main] liquibase.database                       : Set default schema name to PUBLIC
+2026-09-07T10:31:46.895+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : Creating database changelog table with name: PUBLIC.DATABASECHANGELOG
+2026-09-07T10:31:47.004+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-09-07T10:31:47.053+06:00  INFO 1860 --- [Homeberries] [main] liquibase.snapshot                       : Creating snapshot
+2026-09-07T10:31:47.151+06:00  INFO 1860 --- [Homeberries] [main] liquibase.lockservice                    : Successfully acquired change log lock
+2026-09-07T10:31:47.152+06:00  INFO 1860 --- [Homeberries] [main] liquibase.command                        : Using deploymentId: 8755506277
+2026-09-07T10:31:47.154+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-09-07T10:31:47.197+06:00  INFO 1860 --- [Homeberries] [main] liquibase.ui                             : Running Changeset: db/changelog/initial/001_create_users.yaml::001-create-users-table::student
+2026-09-07T10:31:47.207+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : Table users created
+2026-09-07T10:31:47.209+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : ChangeSet db/changelog/initial/001_create_users.yaml::001-create-users-table::student ran successfully in 10ms
+2026-09-07T10:31:47.216+06:00  INFO 1860 --- [Homeberries] [main] liquibase.ui                             : Running Changeset: db/changelog/initial/002_create_categories.yaml::002-create-categories-table::student
+2026-09-07T10:31:47.218+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : Table categories created
+2026-09-07T10:31:47.219+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : ChangeSet db/changelog/initial/002_create_categories.yaml::002-create-categories-table::student ran successfully in 3ms
+2026-09-07T10:31:47.222+06:00  INFO 1860 --- [Homeberries] [main] liquibase.ui                             : Running Changeset: db/changelog/initial/003_create_products.yaml::003-create-products-table::student
+2026-09-07T10:31:47.227+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : Table products created
+2026-09-07T10:31:47.235+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : Foreign key constraint added to products (category_id)
+2026-09-07T10:31:47.235+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : ChangeSet db/changelog/initial/003_create_products.yaml::003-create-products-table::student ran successfully in 12ms
+2026-09-07T10:31:47.238+06:00  INFO 1860 --- [Homeberries] [main] liquibase.ui                             : Running Changeset: db/changelog/initial/004_create_carts.yaml::004-create-carts-table::student
+2026-09-07T10:31:47.241+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : Table carts created
+2026-09-07T10:31:47.244+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : Foreign key constraint added to carts (user_id)
+2026-09-07T10:31:47.245+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : ChangeSet db/changelog/initial/004_create_carts.yaml::004-create-carts-table::student ran successfully in 7ms
+2026-09-07T10:31:47.249+06:00  INFO 1860 --- [Homeberries] [main] liquibase.ui                             : Running Changeset: db/changelog/initial/005_create_cart_items.yaml::005-create-cart-items-table::student
+2026-09-07T10:31:47.252+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : Table cart_items created
+2026-09-07T10:31:47.254+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : Foreign key constraint added to cart_items (cart_id)
+2026-09-07T10:31:47.257+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : Foreign key constraint added to cart_items (product_id)
+2026-09-07T10:31:47.257+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : ChangeSet db/changelog/initial/005_create_cart_items.yaml::005-create-cart-items-table::student ran successfully in 8ms
+2026-09-07T10:31:47.266+06:00  INFO 1860 --- [Homeberries] [main] liquibase.ui                             : Running Changeset: db/changelog/initial/006_create_orders.yaml::006-create-orders-table::student
+2026-09-07T10:31:47.270+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : Table orders created
+2026-09-07T10:31:47.274+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : Foreign key constraint added to orders (user_id)
+2026-09-07T10:31:47.274+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : ChangeSet db/changelog/initial/006_create_orders.yaml::006-create-orders-table::student ran successfully in 7ms
+2026-09-07T10:31:47.279+06:00  INFO 1860 --- [Homeberries] [main] liquibase.ui                             : Running Changeset: db/changelog/initial/007_create_order_items.yaml::007-create-order-items-table::student
+2026-09-07T10:31:47.282+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : Table order_items created
+2026-09-07T10:31:47.284+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : Foreign key constraint added to order_items (order_id)
+2026-09-07T10:31:47.287+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : Foreign key constraint added to order_items (product_id)
+2026-09-07T10:31:47.288+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : ChangeSet db/changelog/initial/007_create_order_items.yaml::007-create-order-items-table::student ran successfully in 9ms
+2026-09-07T10:31:47.297+06:00  INFO 1860 --- [Homeberries] [main] liquibase.ui                             : Running Changeset: db/changelog/initial/008_insert_categories_and_products.yaml::008-insert-categories-and-products::student
+2026-09-07T10:31:47.299+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : New row inserted into categories
+2026-09-07T10:31:47.300+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : New row inserted into categories
+2026-09-07T10:31:47.302+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : New row inserted into categories
+2026-09-07T10:31:47.303+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : New row inserted into categories
+2026-09-07T10:31:47.304+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : New row inserted into categories
+2026-09-07T10:31:47.305+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : New row inserted into categories
+2026-09-07T10:31:47.306+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : New row inserted into products
+2026-09-07T10:31:47.308+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : New row inserted into products
+2026-09-07T10:31:47.311+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : New row inserted into products
+2026-09-07T10:31:47.313+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : New row inserted into products
+2026-09-07T10:31:47.316+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : New row inserted into products
+2026-09-07T10:31:47.318+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : New row inserted into products
+2026-09-07T10:31:47.320+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : New row inserted into products
+2026-09-07T10:31:47.322+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : New row inserted into products
+2026-09-07T10:31:47.323+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : New row inserted into products
+2026-09-07T10:31:47.324+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : New row inserted into products
+2026-09-07T10:31:47.326+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : New row inserted into users
+2026-09-07T10:31:47.328+06:00  INFO 1860 --- [Homeberries] [main] liquibase.changelog                      : ChangeSet db/changelog/initial/008_insert_categories_and_products.yaml::008-insert-categories-and-products::student ran successfully in 30ms
+2026-09-07T10:31:47.337+06:00  INFO 1860 --- [Homeberries] [main] liquibase.util                           : UPDATE SUMMARY
+2026-09-07T10:31:47.337+06:00  INFO 1860 --- [Homeberries] [main] liquibase.util                           : Run:                          8
+2026-09-07T10:31:47.338+06:00  INFO 1860 --- [Homeberries] [main] liquibase.util                           : Previously run:               0
+2026-09-07T10:31:47.338+06:00  INFO 1860 --- [Homeberries] [main] liquibase.util                           : Filtered out:                 0
+2026-09-07T10:31:47.338+06:00  INFO 1860 --- [Homeberries] [main] liquibase.util                           : -------------------------------
+2026-09-07T10:31:47.338+06:00  INFO 1860 --- [Homeberries] [main] liquibase.util                           : Total change sets:            8
+2026-09-07T10:31:47.339+06:00  INFO 1860 --- [Homeberries] [main] liquibase.util                           : Update summary generated
+2026-09-07T10:31:47.342+06:00  INFO 1860 --- [Homeberries] [main] liquibase.command                        : Update command completed successfully.
+2026-09-07T10:31:47.343+06:00  INFO 1860 --- [Homeberries] [main] liquibase.ui                             : Liquibase: Update has been successful. Rows affected: 17
+2026-09-07T10:31:47.345+06:00  INFO 1860 --- [Homeberries] [main] liquibase.lockservice                    : Successfully released change log lock
+2026-09-07T10:31:47.346+06:00  INFO 1860 --- [Homeberries] [main] liquibase.command                        : Command execution complete
+2026-09-07T10:31:48.949+06:00  INFO 1860 --- [Homeberries] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-07T10:31:49.004+06:00  INFO 1860 --- [Homeberries] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-09-07T10:31:49.505+06:00  INFO 1860 --- [Homeberries] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-07T10:31:49.596+06:00  INFO 1860 --- [Homeberries] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:./db/test]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TEST/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-07T10:31:50.663+06:00  INFO 1860 --- [Homeberries] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-07T10:31:50.701+06:00  INFO 1860 --- [Homeberries] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-07T10:31:50.771+06:00  INFO 1860 --- [Homeberries] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-07T10:31:51.177+06:00  WARN 1860 --- [Homeberries] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-07T10:31:51.263+06:00  INFO 1860 --- [Homeberries] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-09-07T10:31:51.430+06:00  INFO 1860 --- [Homeberries] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-09-07T10:31:51.521+06:00 DEBUG 1860 --- [Homeberries] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 27 mappings in 'requestMappingHandlerMapping'
+2026-09-07T10:31:51.550+06:00 DEBUG 1860 --- [Homeberries] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /static/**, /uploads/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-09-07T10:31:51.585+06:00 DEBUG 1860 --- [Homeberries] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-09-07T10:31:51.658+06:00 DEBUG 1860 --- [Homeberries] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-09-07T10:31:51.826+06:00 DEBUG 1860 --- [Homeberries] [main] o.s.w.s.v.f.FreeMarkerConfigurer         : File system access not preferred: using SpringTemplateLoader
+2026-09-07T10:31:51.912+06:00  INFO 1860 --- [Homeberries] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8089 (http) with context path '/'
+2026-09-07T10:31:51.919+06:00  INFO 1860 --- [Homeberries] [main] c.e.Homeberries.HomeberriesApplication   : Started HomeberriesApplication in 8.183 seconds (process running for 8.605)
+2026-09-07T10:31:51.922+06:00  WARN 1860 --- [Homeberries] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-07T10:31:51.923+06:00  WARN 1860 --- [Homeberries] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
