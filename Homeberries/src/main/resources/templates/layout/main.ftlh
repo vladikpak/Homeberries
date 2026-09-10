@@ -20,9 +20,9 @@
             <a class="navbar-brand" href="/">HomeBerries</a>
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav me-auto">
-                    <li class="nav-item"><a class="nav-link" href="/"><@spring.message "nav.home"/></a></li>
-                    <li class="nav-item"><a class="nav-link" href="/categories"><@spring.message "nav.categories"/></a></li>
-                    <li class="nav-item"><a class="nav-link" href="/products"><@spring.message "nav.products"/></a></li>
+                    <a class="nav-link" href="/"><@spring.message "nav.home"/></a>
+                    <a class="nav-link" href="/categories"><@spring.message "nav.categories"/></a>
+                    <a class="nav-link" href="/products"><@spring.message "nav.products"/></a>
 
                 <#if SPRING_SECURITY_CONTEXT??>
                     <#assign user = SPRING_SECURITY_CONTEXT.authentication.principal>
