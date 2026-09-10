@@ -18,65 +18,70 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" href="/">HomeBerries</a>
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto">
-                    <a class="nav-link" href="/"><@spring.message "nav.home"/></a>
-                    <a class="nav-link" href="/categories"><@spring.message "nav.categories"/></a>
-                    <a class="nav-link" href="/products"><@spring.message "nav.products"/></a>
 
-                <#if SPRING_SECURITY_CONTEXT??>
-                    <#assign user = SPRING_SECURITY_CONTEXT.authentication.principal>
-                    <#if user.authorities?seq_contains("ROLE_ADMIN")>
-                        <li class="nav-item">
-                            <a class="nav-link text-warning" href="/admin/products/new">
-                                <i class="fas fa-plus-circle"></i> Добавить товар
-                            </a>
-                        </li>
-                    </#if>
-                </#if>
-                </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Переключить навигацию">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                <div class="d-flex">
+            <div class="collapse navbar-collapse" id="navbarContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/"><@spring.message "nav.home"/></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/categories"><@spring.message "nav.categories"/></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/products"><@spring.message "nav.products"/></a>
+                    </li>
+
                     <#if SPRING_SECURITY_CONTEXT??>
                         <#assign user = SPRING_SECURITY_CONTEXT.authentication.principal>
-                        <a href="/cart" class="btn btn-outline-light me-2">
+                        <#if user.authorities?seq_contains("ROLE_ADMIN")>
+                            <li class="nav-item">
+                                <a class="nav-link text-warning" href="/admin/products/new">
+                                    <i class="fas fa-plus-circle"></i> Добавить товар
+                                </a>
+                            </li>
+                        </#if>
+                    </#if>
+                </ul>
+
+                <div class="d-flex align-items-center flex-wrap gap-2">
+                    <#if SPRING_SECURITY_CONTEXT??>
+                        <#assign user = SPRING_SECURITY_CONTEXT.authentication.principal>
+                        <a href="/cart" class="btn btn-outline-light btn-sm">
                             <i class="fas fa-shopping-cart"></i> <@spring.message "nav.cart"/>
                         </a>
-                        <a href="/profile" class="btn btn-outline-light me-2">
+                        <a href="/profile" class="btn btn-outline-light btn-sm">
                             <i class="fas fa-user"></i> <@spring.message "nav.profile"/>
                         </a>
-                        <a href="/orders" class="btn btn-outline-light me-2"><@spring.message "nav.orders"/></a>
-                        <span class="navbar-text me-3">${user.username}</span>
-                        <form action="/auth/logout" method="post">
+                        <a href="/orders" class="btn btn-outline-light btn-sm"><@spring.message "nav.orders"/></a>
+                        <span class="navbar-text text-white">${user.username}</span>
+                        <form action="/auth/logout" method="post" class="d-inline">
                             <@csrf />
-                            <button class="btn btn-outline-light" type="submit"><@spring.message "nav.logout"/></button>
+                            <button class="btn btn-outline-light btn-sm" type="submit"><@spring.message "nav.logout"/></button>
                         </form>
                     <#else>
-                        <a href="/auth/login" class="btn btn-outline-light me-2"><@spring.message "nav.login"/></a>
-                        <a href="/auth/register" class="btn btn-primary"><@spring.message "nav.register"/></a>
+                        <a href="/auth/login" class="btn btn-outline-light btn-sm"><@spring.message "nav.login"/></a>
+                        <a href="/auth/register" class="btn btn-primary btn-sm"><@spring.message "nav.register"/></a>
                     </#if>
-                </div>
-                <div class="dropdown d-inline-block ms-3">
-                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
-                        <#assign currentLang = .locale>
-                        <#if currentLang == "en">
-                            English
-                        <#else>
-                            Русский
-                        </#if>
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                        <li>
-                            <a class="dropdown-item ${(currentLang == 'en')?then('active', '')}" href="?lang=en">
+
+                    <div class="dropdown">
+                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                            <#assign currentLang = .locale>
+                            <#if currentLang == "en">
                                 English
-                            </a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item ${(currentLang == 'ru')?then('active', '')}" href="?lang=ru">
+                            <#else>
                                 Русский
-                            </a>
-                        </li>
-                    </ul>
+                            </#if>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item ${(currentLang == 'en')?then('active', '')}" href="?lang=en">English</a></li>
+                            <li><a class="dropdown-item ${(currentLang == 'ru')?then('active', '')}" href="?lang=ru">Русский</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

@@ -258,3 +258,14 @@
 2026-09-11T03:30:11.378+06:00 DEBUG 9744 --- [Homeberries] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : View name [auth/login], model {}
 2026-09-11T03:30:11.378+06:00 DEBUG 9744 --- [Homeberries] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [auth/login.ftlh]
 2026-09-11T03:30:11.379+06:00 DEBUG 9744 --- [Homeberries] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-11T03:38:32.688+06:00 DEBUG 9744 --- [Homeberries] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/auth/login", parameters={}
+2026-09-11T03:38:32.689+06:00 DEBUG 9744 --- [Homeberries] [http-nio-8089-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Homeberries.controller.AuthController#loginPage(String, String, String, Model)
+2026-09-11T03:38:32.690+06:00 DEBUG 9744 --- [Homeberries] [http-nio-8089-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [*/*]
+2026-09-11T03:38:32.691+06:00 DEBUG 9744 --- [Homeberries] [http-nio-8089-exec-6] o.s.w.s.view.freemarker.FreeMarkerView   : View name [auth/login], model {}
+2026-09-11T03:38:32.691+06:00 DEBUG 9744 --- [Homeberries] [http-nio-8089-exec-6] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [auth/login.ftlh]
+2026-09-11T03:38:32.693+06:00 DEBUG 9744 --- [Homeberries] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-11T03:46:15.411+06:00  INFO 9744 --- [Homeberries] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-11T03:46:15.415+06:00  INFO 9744 --- [Homeberries] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-11T03:46:15.422+06:00  INFO 9744 --- [Homeberries] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-11T03:46:15.424+06:00  INFO 9744 --- [Homeberries] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-11T03:46:15.426+06:00  INFO 9744 --- [Homeberries] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
