@@ -24,9 +24,7 @@ public class AdminController {
     }
 
     @PostMapping("/products/new")
-    public String createProduct(@ModelAttribute ProductDto productDto,
-                                @RequestParam("imageFile") MultipartFile imageFile,
-                                Model model) {
+    public String createProduct(@ModelAttribute ProductDto productDto, @RequestParam("imageFile") MultipartFile imageFile, Model model) {
         try {
             productService.createProduct(productDto, imageFile);
             return "redirect:/products";
