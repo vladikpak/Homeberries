@@ -14604,3 +14604,956 @@ Caused by: org.apache.tomcat.util.http.fileupload.impl.FileSizeLimitExceededExce
 2026-09-14T05:20:04.728+06:00  INFO 6440 --- [Homeberries] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2026-09-14T05:20:04.731+06:00  INFO 6440 --- [Homeberries] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2026-09-14T05:20:04.732+06:00  INFO 6440 --- [Homeberries] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-09-14T05:20:08.907+06:00  INFO 7128 --- [Homeberries] [main] c.e.Homeberries.HomeberriesApplication   : Starting HomeberriesApplication using Java 26.0.2.1 with PID 7128 (C:\Users\User\Desktop\Project\Homeberries\Homeberries\target\classes started by User in C:\Users\User\Desktop\Project\Homeberries)
+2026-09-14T05:20:08.910+06:00 DEBUG 7128 --- [Homeberries] [main] c.e.Homeberries.HomeberriesApplication   : Running with Spring Boot v4.1.0-M3, Spring v7.0.6
+2026-09-14T05:20:08.910+06:00  INFO 7128 --- [Homeberries] [main] c.e.Homeberries.HomeberriesApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-09-14T05:20:09.737+06:00  INFO 7128 --- [Homeberries] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-09-14T05:20:09.802+06:00  INFO 7128 --- [Homeberries] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 55 ms. Found 7 JPA repository interfaces.
+2026-09-14T05:20:10.325+06:00  INFO 7128 --- [Homeberries] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8089 (http)
+2026-09-14T05:20:10.336+06:00  INFO 7128 --- [Homeberries] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-09-14T05:20:10.336+06:00  INFO 7128 --- [Homeberries] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.18]
+2026-09-14T05:20:10.389+06:00  INFO 7128 --- [Homeberries] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1431 ms
+2026-09-14T05:20:10.433+06:00 DEBUG 7128 --- [Homeberries] [main] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2026-09-14T05:20:10.563+06:00  INFO 7128 --- [Homeberries] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-09-14T05:20:11.020+06:00  INFO 7128 --- [Homeberries] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn1: url=jdbc:h2:./db/test user=ROOT
+2026-09-14T05:20:11.023+06:00  INFO 7128 --- [Homeberries] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-09-14T05:20:11.075+06:00  INFO 7128 --- [Homeberries] [main] liquibase.database                       : Set default schema name to PUBLIC
+2026-09-14T05:20:11.429+06:00  INFO 7128 --- [Homeberries] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-09-14T05:20:11.534+06:00  INFO 7128 --- [Homeberries] [main] liquibase.ui                             : Database is up to date, no changesets to execute
+2026-09-14T05:20:11.536+06:00  INFO 7128 --- [Homeberries] [main] liquibase.changelog                      : Reading from PUBLIC.DATABASECHANGELOG
+2026-09-14T05:20:11.546+06:00  INFO 7128 --- [Homeberries] [main] liquibase.util                           : UPDATE SUMMARY
+2026-09-14T05:20:11.546+06:00  INFO 7128 --- [Homeberries] [main] liquibase.util                           : Run:                          0
+2026-09-14T05:20:11.546+06:00  INFO 7128 --- [Homeberries] [main] liquibase.util                           : Previously run:               8
+2026-09-14T05:20:11.547+06:00  INFO 7128 --- [Homeberries] [main] liquibase.util                           : Filtered out:                 0
+2026-09-14T05:20:11.547+06:00  INFO 7128 --- [Homeberries] [main] liquibase.util                           : -------------------------------
+2026-09-14T05:20:11.547+06:00  INFO 7128 --- [Homeberries] [main] liquibase.util                           : Total change sets:            8
+2026-09-14T05:20:11.548+06:00  INFO 7128 --- [Homeberries] [main] liquibase.util                           : Update summary generated
+2026-09-14T05:20:11.549+06:00  INFO 7128 --- [Homeberries] [main] liquibase.command                        : Command execution complete
+2026-09-14T05:20:13.310+06:00  INFO 7128 --- [Homeberries] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-09-14T05:20:13.369+06:00  INFO 7128 --- [Homeberries] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.1.Final
+2026-09-14T05:20:13.849+06:00  INFO 7128 --- [Homeberries] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-09-14T05:20:13.933+06:00  INFO 7128 --- [Homeberries] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:./db/test]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TEST/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-09-14T05:20:15.080+06:00  INFO 7128 --- [Homeberries] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-09-14T05:20:15.116+06:00  INFO 7128 --- [Homeberries] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-09-14T05:20:15.190+06:00  INFO 7128 --- [Homeberries] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-09-14T05:20:15.841+06:00  WARN 7128 --- [Homeberries] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-09-14T05:20:16.048+06:00  INFO 7128 --- [Homeberries] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2026-09-14T05:20:16.239+06:00  INFO 7128 --- [Homeberries] [main] o.s.b.w.a.WelcomePageHandlerMapping      : Adding welcome page template: index
+2026-09-14T05:20:16.344+06:00 DEBUG 7128 --- [Homeberries] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 27 mappings in 'requestMappingHandlerMapping'
+2026-09-14T05:20:16.380+06:00 DEBUG 7128 --- [Homeberries] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /static/**, /uploads/**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2026-09-14T05:20:16.413+06:00 DEBUG 7128 --- [Homeberries] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 2 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-09-14T05:20:16.481+06:00 DEBUG 7128 --- [Homeberries] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-09-14T05:20:16.673+06:00 DEBUG 7128 --- [Homeberries] [main] o.s.w.s.v.f.FreeMarkerConfigurer         : File system access not preferred: using SpringTemplateLoader
+2026-09-14T05:20:16.770+06:00  INFO 7128 --- [Homeberries] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8089 (http) with context path '/'
+2026-09-14T05:20:16.776+06:00  INFO 7128 --- [Homeberries] [main] c.e.Homeberries.HomeberriesApplication   : Started HomeberriesApplication in 8.391 seconds (process running for 9.047)
+2026-09-14T05:20:16.778+06:00  WARN 7128 --- [Homeberries] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-09-14T05:20:16.779+06:00  WARN 7128 --- [Homeberries] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-09-14T05:20:24.723+06:00  INFO 7128 --- [Homeberries] [http-nio-8089-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-09-14T05:20:24.723+06:00  INFO 7128 --- [Homeberries] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-09-14T05:20:24.723+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2026-09-14T05:20:24.723+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected UserLocaleResolver
+2026-09-14T05:20:24.724+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@74d242b5
+2026-09-14T05:20:24.725+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6174ff60
+2026-09-14T05:20:24.725+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='true': request parameters and headers will be shown which may lead to unsafe logging of potentially sensitive data
+2026-09-14T05:20:24.725+06:00  INFO 7128 --- [Homeberries] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2026-09-14T05:20:24.742+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2026-09-14T05:20:24.751+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Homeberries.controller.MainController#Home()
+2026-09-14T05:20:24.815+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-09-14T05:20:24.815+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] o.s.w.s.view.freemarker.FreeMarkerView   : View name [index], model {}
+2026-09-14T05:20:24.816+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [index.ftlh]
+2026-09-14T05:20:24.901+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-14T05:20:24.969+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/uploads/banners/c25c94fe96_1000.jpg", parameters={}
+2026-09-14T05:20:24.969+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/uploads/banners/0d390504f92d8e4f4da00be99045525b.jpg", parameters={}
+2026-09-14T05:20:24.973+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/], classpath [static/uploads/]]
+2026-09-14T05:20:24.973+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/], classpath [static/uploads/]]
+2026-09-14T05:20:24.990+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-14T05:20:24.990+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-14T05:20:24.995+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/uploads/banners/images%20(1).jpg", parameters={}
+2026-09-14T05:20:24.997+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/], classpath [static/uploads/]]
+2026-09-14T05:20:25.000+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-14T05:20:25.152+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/auth/login", parameters={}
+2026-09-14T05:20:25.152+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Homeberries.controller.AuthController#loginPage(String, String, String, Model)
+2026-09-14T05:20:25.170+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-09-14T05:20:25.170+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-6] o.s.w.s.view.freemarker.FreeMarkerView   : View name [auth/login], model {}
+2026-09-14T05:20:25.170+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-6] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [auth/login.ftlh]
+2026-09-14T05:20:25.181+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-14T05:20:25.975+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/auth/login", parameters={}
+2026-09-14T05:20:25.975+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Homeberries.controller.AuthController#loginPage(String, String, String, Model)
+2026-09-14T05:20:25.981+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-09-14T05:20:25.981+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-8] o.s.w.s.view.freemarker.FreeMarkerView   : View name [auth/login], model {}
+2026-09-14T05:20:25.982+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-8] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [auth/login.ftlh]
+2026-09-14T05:20:25.983+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-14T05:20:26.103+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/auth/login", parameters={}
+2026-09-14T05:20:26.103+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Homeberries.controller.AuthController#loginPage(String, String, String, Model)
+2026-09-14T05:20:26.105+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-09-14T05:20:26.105+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-10] o.s.w.s.view.freemarker.FreeMarkerView   : View name [auth/login], model {}
+2026-09-14T05:20:26.105+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-10] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [auth/login.ftlh]
+2026-09-14T05:20:26.107+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-14T05:20:31.672+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:31.696+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.updated_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        carts c1_0 
+    join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.user_id=?
+2026-09-14T05:20:31.839+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/categories?continue", parameters={continue:[]}
+2026-09-14T05:20:31.839+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Homeberries.controller.CategoryController#listCategories(Model)
+2026-09-14T05:20:31.857+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.description,
+        c1_0.icon,
+        c1_0.name 
+    from
+        categories c1_0
+2026-09-14T05:20:31.863+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:31.864+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.updated_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        carts c1_0 
+    join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.user_id=?
+2026-09-14T05:20:31.874+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-09-14T05:20:31.875+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : View name [category/list], model {categories=[CategoryDto(id=1, name=Обувь, description=null, icon=null, products=null), CategoryDto(id=2, name=Детям, description=null, icon=null, products=null), CategoryDto(id=3, name=Мужчинам, description=null, icon=null, products=null), CategoryDto(id=4, name=Электроника, description=null, icon=null, products=null), CategoryDto(id=5, name=Дом, description=null, icon=null, products=null), CategoryDto(id=6, name=Спорт, description=null, icon=null, products=null)]}
+2026-09-14T05:20:31.876+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:31.876+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-2] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [category/list.ftlh]
+2026-09-14T05:20:31.877+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:31.911+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-14T05:20:32.021+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-09-14T05:20:32.023+06:00  WARN 7128 --- [Homeberries] [http-nio-8089-exec-3] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2026-09-14T05:20:32.028+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Homeberries.exception.GlobalControllerAdvice#handleAllExceptions(Exception, Model)
+2026-09-14T05:20:32.028+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /favicon.ico.] to ModelAndView [view="error/error"; model={status=500, reason=Ошибка сервера, errorMessage=No endpoint GET /favicon.ico.}]
+2026-09-14T05:20:32.029+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error/error"; model={status=500, reason=Ошибка сервера, errorMessage=No endpoint GET /favicon.ico.}]
+2026-09-14T05:20:32.029+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:32.030+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.updated_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        carts c1_0 
+    join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.user_id=?
+2026-09-14T05:20:32.042+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-09-14T05:20:32.043+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-3] o.s.w.s.view.freemarker.FreeMarkerView   : View name [error/error], model {status=500, reason=Ошибка сервера, errorMessage=No endpoint GET /favicon.ico.}
+2026-09-14T05:20:32.043+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:32.044+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.updated_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        carts c1_0 
+    join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.user_id=?
+2026-09-14T05:20:32.045+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-3] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [error/error.ftlh]
+2026-09-14T05:20:32.045+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:32.046+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.updated_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        carts c1_0 
+    join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.user_id=?
+2026-09-14T05:20:32.049+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-14T05:20:32.783+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/products?categoryId=5", parameters={categoryId:[5]}
+2026-09-14T05:20:32.783+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Homeberries.controller.ProductController#listProducts(String, Long, int, int, Model)
+2026-09-14T05:20:32.796+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-4] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.category_id,
+        p1_0.created_at,
+        p1_0.description,
+        p1_0.image_url,
+        p1_0.name,
+        p1_0.price,
+        p1_0.stock 
+    from
+        products p1_0 
+    where
+        p1_0.category_id=? 
+    fetch
+        first ? rows only
+2026-09-14T05:20:32.803+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.description,
+        c1_0.icon,
+        c1_0.name 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+2026-09-14T05:20:32.810+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.description,
+        c1_0.icon,
+        c1_0.name 
+    from
+        categories c1_0
+2026-09-14T05:20:32.812+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:32.813+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.updated_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        carts c1_0 
+    join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.user_id=?
+2026-09-14T05:20:32.823+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-09-14T05:20:32.825+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-4] o.s.w.s.view.freemarker.FreeMarkerView   : View name [product/list], model {products=[ProductDto(id=7, name=Набор посуды, description=null, price=3500, stock=0, imageUrl=/static/uploads/products/appliances.jpg, category=null, categoryId=5, categoryName=Дом), ProductDto(id=8, name=Сковорода, description=null, price=1200, stock=0, imageUrl=/static/uploads/products/frypan.jpg, category=null, categoryId=5, categoryName=Дом), ProductDto(id=16, name=nnnn, description=nnnnn, price=6, stock=6, imageUrl=/uploads/products/1789341285474_df035a84f09ab55e43d23d5aa8eec382.jpg, category=null, categoryId=5, categoryName=Дом)], currentPage=0, totalPages=1, totalElements=3, categories=[CategoryDto(id=1, name=Обувь, description=null, icon=null, products=null), CategoryDto(id=2, name=Детям, description=null, icon=null, products=null), CategoryDto(id=3, name=Мужчинам, description=null, icon=null, products=null), CategoryDto(id=4, name=Электроника, description=null, icon=null, products=null), CategoryDto(id=5, name=Дом, description=null, icon=null, products=null), CategoryDto(id=6, name=Спорт, description=null, icon=null, products=null)], filterName=null, filterCategory=5}
+2026-09-14T05:20:32.826+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:32.826+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-4] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [product/list.ftlh]
+2026-09-14T05:20:32.827+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:32.833+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-14T05:20:32.868+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/static/uploads/products/frypan.jpg", parameters={}
+2026-09-14T05:20:32.868+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/static/uploads/products/appliances.jpg", parameters={}
+2026-09-14T05:20:32.869+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2026-09-14T05:20:32.869+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2026-09-14T05:20:32.871+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-14T05:20:32.871+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-14T05:20:32.879+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/uploads/products/1789341285474_df035a84f09ab55e43d23d5aa8eec382.jpg", parameters={}
+2026-09-14T05:20:32.879+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/], classpath [static/uploads/]]
+2026-09-14T05:20:32.882+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-14T05:20:32.919+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-09-14T05:20:32.920+06:00  WARN 7128 --- [Homeberries] [http-nio-8089-exec-8] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2026-09-14T05:20:32.921+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Homeberries.exception.GlobalControllerAdvice#handleAllExceptions(Exception, Model)
+2026-09-14T05:20:32.921+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /favicon.ico.] to ModelAndView [view="error/error"; model={status=500, reason=Ошибка сервера, errorMessage=No endpoint GET /favicon.ico.}]
+2026-09-14T05:20:32.922+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-8] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error/error"; model={status=500, reason=Ошибка сервера, errorMessage=No endpoint GET /favicon.ico.}]
+2026-09-14T05:20:32.923+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:32.924+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.updated_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        carts c1_0 
+    join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.user_id=?
+2026-09-14T05:20:32.928+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-09-14T05:20:32.928+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-8] o.s.w.s.view.freemarker.FreeMarkerView   : View name [error/error], model {status=500, reason=Ошибка сервера, errorMessage=No endpoint GET /favicon.ico.}
+2026-09-14T05:20:32.929+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:32.930+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.updated_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        carts c1_0 
+    join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.user_id=?
+2026-09-14T05:20:32.931+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-8] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [error/error.ftlh]
+2026-09-14T05:20:32.932+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:32.933+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.updated_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        carts c1_0 
+    join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.user_id=?
+2026-09-14T05:20:32.937+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-14T05:20:34.892+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/categories?continue", parameters={continue:[]}
+2026-09-14T05:20:34.893+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Homeberries.controller.CategoryController#listCategories(Model)
+2026-09-14T05:20:34.895+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.description,
+        c1_0.icon,
+        c1_0.name 
+    from
+        categories c1_0
+2026-09-14T05:20:34.897+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:34.898+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.updated_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        carts c1_0 
+    join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.user_id=?
+2026-09-14T05:20:34.900+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-09-14T05:20:34.901+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-9] o.s.w.s.view.freemarker.FreeMarkerView   : View name [category/list], model {categories=[CategoryDto(id=1, name=Обувь, description=null, icon=null, products=null), CategoryDto(id=2, name=Детям, description=null, icon=null, products=null), CategoryDto(id=3, name=Мужчинам, description=null, icon=null, products=null), CategoryDto(id=4, name=Электроника, description=null, icon=null, products=null), CategoryDto(id=5, name=Дом, description=null, icon=null, products=null), CategoryDto(id=6, name=Спорт, description=null, icon=null, products=null)]}
+2026-09-14T05:20:34.901+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:34.903+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-9] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [category/list.ftlh]
+2026-09-14T05:20:34.903+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:34.906+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-14T05:20:34.986+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-09-14T05:20:34.987+06:00  WARN 7128 --- [Homeberries] [http-nio-8089-exec-10] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2026-09-14T05:20:34.989+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Homeberries.exception.GlobalControllerAdvice#handleAllExceptions(Exception, Model)
+2026-09-14T05:20:34.990+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-10] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /favicon.ico.] to ModelAndView [view="error/error"; model={status=500, reason=Ошибка сервера, errorMessage=No endpoint GET /favicon.ico.}]
+2026-09-14T05:20:34.990+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-10] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error/error"; model={status=500, reason=Ошибка сервера, errorMessage=No endpoint GET /favicon.ico.}]
+2026-09-14T05:20:34.990+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:34.992+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-10] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.updated_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        carts c1_0 
+    join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.user_id=?
+2026-09-14T05:20:34.993+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-09-14T05:20:34.993+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-10] o.s.w.s.view.freemarker.FreeMarkerView   : View name [error/error], model {status=500, reason=Ошибка сервера, errorMessage=No endpoint GET /favicon.ico.}
+2026-09-14T05:20:34.994+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:34.995+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-10] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.updated_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        carts c1_0 
+    join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.user_id=?
+2026-09-14T05:20:34.996+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-10] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [error/error.ftlh]
+2026-09-14T05:20:34.997+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:34.997+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-10] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.updated_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        carts c1_0 
+    join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.user_id=?
+2026-09-14T05:20:35.000+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-14T05:20:36.460+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/products?categoryId=6", parameters={categoryId:[6]}
+2026-09-14T05:20:36.460+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.example.Homeberries.controller.ProductController#listProducts(String, Long, int, int, Model)
+2026-09-14T05:20:36.462+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] org.hibernate.SQL                        : 
+    select
+        p1_0.id,
+        p1_0.category_id,
+        p1_0.created_at,
+        p1_0.description,
+        p1_0.image_url,
+        p1_0.name,
+        p1_0.price,
+        p1_0.stock 
+    from
+        products p1_0 
+    where
+        p1_0.category_id=? 
+    fetch
+        first ? rows only
+2026-09-14T05:20:36.463+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.description,
+        c1_0.icon,
+        c1_0.name 
+    from
+        categories c1_0 
+    where
+        c1_0.id=?
+2026-09-14T05:20:36.466+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.description,
+        c1_0.icon,
+        c1_0.name 
+    from
+        categories c1_0
+2026-09-14T05:20:36.468+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:36.468+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.updated_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        carts c1_0 
+    join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.user_id=?
+2026-09-14T05:20:36.470+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, */*;q=0.8, application/signed-exchange;v=b3;q=0.7]
+2026-09-14T05:20:36.470+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] o.s.w.s.view.freemarker.FreeMarkerView   : View name [product/list], model {products=[ProductDto(id=9, name=Футбольный мяч, description=null, price=2000, stock=0, imageUrl=/static/uploads/products/ball.jpg, category=null, categoryId=6, categoryName=Спорт), ProductDto(id=10, name=Гантели 5кг, description=null, price=3000, stock=0, imageUrl=/static/uploads/products/gantle.jpg, category=null, categoryId=6, categoryName=Спорт), ProductDto(id=15, name=ggggggg, description=ggggggggggg, price=3, stock=8, imageUrl=/uploads/products/1789341133845_frontend_vs_backend.webp, category=null, categoryId=6, categoryName=Спорт)], currentPage=0, totalPages=1, totalElements=3, categories=[CategoryDto(id=1, name=Обувь, description=null, icon=null, products=null), CategoryDto(id=2, name=Детям, description=null, icon=null, products=null), CategoryDto(id=3, name=Мужчинам, description=null, icon=null, products=null), CategoryDto(id=4, name=Электроника, description=null, icon=null, products=null), CategoryDto(id=5, name=Дом, description=null, icon=null, products=null), CategoryDto(id=6, name=Спорт, description=null, icon=null, products=null)], filterName=null, filterCategory=6}
+2026-09-14T05:20:36.471+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:36.471+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [product/list.ftlh]
+2026-09-14T05:20:36.472+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:36.476+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-14T05:20:36.515+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/static/uploads/products/ball.jpg", parameters={}
+2026-09-14T05:20:36.515+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/static/uploads/products/gantle.jpg", parameters={}
+2026-09-14T05:20:36.515+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2026-09-14T05:20:36.515+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [static/]]
+2026-09-14T05:20:36.517+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-14T05:20:36.518+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-14T05:20:36.525+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/uploads/products/1789341133845_frontend_vs_backend.webp", parameters={}
+2026-09-14T05:20:36.526+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [URL [file:uploads/], classpath [static/uploads/]]
+2026-09-14T05:20:36.529+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-14T05:20:36.560+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2026-09-14T05:20:36.562+06:00  WARN 7128 --- [Homeberries] [http-nio-8089-exec-5] o.s.web.servlet.PageNotFound             : No mapping for GET /favicon.ico
+2026-09-14T05:20:36.562+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Using @ExceptionHandler com.example.Homeberries.exception.GlobalControllerAdvice#handleAllExceptions(Exception, Model)
+2026-09-14T05:20:36.563+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.NoHandlerFoundException: No endpoint GET /favicon.ico.] to ModelAndView [view="error/error"; model={status=500, reason=Ошибка сервера, errorMessage=No endpoint GET /favicon.ico.}]
+2026-09-14T05:20:36.563+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : Using resolved error view: ModelAndView [view="error/error"; model={status=500, reason=Ошибка сервера, errorMessage=No endpoint GET /favicon.ico.}]
+2026-09-14T05:20:36.564+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:36.565+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.updated_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        carts c1_0 
+    join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.user_id=?
+2026-09-14T05:20:36.569+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected '*/*' given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8]
+2026-09-14T05:20:36.569+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-5] o.s.w.s.view.freemarker.FreeMarkerView   : View name [error/error], model {status=500, reason=Ошибка сервера, errorMessage=No endpoint GET /favicon.ico.}
+2026-09-14T05:20:36.570+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:36.571+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.updated_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        carts c1_0 
+    join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.user_id=?
+2026-09-14T05:20:36.573+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-5] o.s.w.s.view.freemarker.FreeMarkerView   : Rendering [error/error.ftlh]
+2026-09-14T05:20:36.574+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        users u1_0 
+    where
+        u1_0.email=?
+2026-09-14T05:20:36.575+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.updated_at,
+        c1_0.user_id,
+        u1_0.id,
+        u1_0.created_at,
+        u1_0.email,
+        u1_0.name,
+        u1_0.password,
+        u1_0.phone,
+        u1_0.preferred_language,
+        u1_0.role 
+    from
+        carts c1_0 
+    join
+        users u1_0 
+            on u1_0.id=c1_0.user_id 
+    where
+        c1_0.user_id=?
+2026-09-14T05:20:36.578+06:00 DEBUG 7128 --- [Homeberries] [http-nio-8089-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-09-14T05:21:01.327+06:00  INFO 7128 --- [Homeberries] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-09-14T05:21:01.332+06:00  INFO 7128 --- [Homeberries] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-09-14T05:21:01.342+06:00  INFO 7128 --- [Homeberries] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-09-14T05:21:01.345+06:00  INFO 7128 --- [Homeberries] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-09-14T05:21:01.347+06:00  INFO 7128 --- [Homeberries] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
