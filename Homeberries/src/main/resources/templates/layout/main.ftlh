@@ -79,7 +79,7 @@
                                 한국어
                             <#elseif currentLang == "jpn">
                                 Японский
-                            <#else>`
+                            <#else>
                                 Русский
                             </#if>
                         </button>
