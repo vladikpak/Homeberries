@@ -73,13 +73,22 @@
                             <#assign currentLang = .locale>
                             <#if currentLang == "en">
                                 English
-                            <#else>
+                            <#elseif currentLang == "kgz">
+                                Кыргызча
+                            <#elseif currentLang == "ko">
+                                한국어
+                            <#elseif currentLang == "jpn">
+                                Японский
+                            <#else>`
                                 Русский
                             </#if>
                         </button>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li><a class="dropdown-item ${(currentLang == 'en')?then('active', '')}" href="?lang=en">English</a></li>
                             <li><a class="dropdown-item ${(currentLang == 'ru')?then('active', '')}" href="?lang=ru">Русский</a></li>
+                            <li><a class="dropdown-item ${(currentLang == 'ko')?then('active', '')}" href="?lang=ko">한국어</a></li>
+                            <li><a class="dropdown-item ${(currentLang == 'jpn')?then('active', '')}" href="?lang=jpn">日本語</a></li>
+                            <li><a class="dropdown-item ${(currentLang == 'kgz')?then('active', '')}" href="?lang=kgz">Кыргызча</a></li>
                         </ul>
                     </div>
                 </div>
